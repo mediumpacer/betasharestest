@@ -1,0 +1,36 @@
+/* Betashares colours & variables */
+:root {
+  --color-text: #09090a;
+  --color-text-light: #666;
+  --color-background: #f0edeb;
+  --color-standard-grey: #ccc;
+  --color-dark-grey: #aaa;
+
+  /* Betashares colours & variables */
+  --color-beta-orange: #fc4d16;
+  --color-beta-orange-highlight: #ff6231;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
