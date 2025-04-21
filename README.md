@@ -1,6 +1,8 @@
 # Betashares Search App
 
-This is a search app for fetching and filtering Betashares ETF fund data
+This is a search app for fetching and filtering Betashares ETF fund data.
+
+It is recommended to user Node version 22+ for this application.
 
 ## Project Setup
 
@@ -13,6 +15,8 @@ npm install
 ```sh
 npm run dev
 ```
+
+The app can then be accessed at http://localhost:3000/
 
 ### Type-Check, Compile and Minify for Production
 
