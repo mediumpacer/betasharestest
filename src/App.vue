@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <header>
-      <img class="logo" src="./assets/logo.svg" alt="Betashares" />
+      <img class="logo" src="./assets/logo.svg" alt="Betashares" width="184" height="40" />
     </header>
 
     <SearchBar @search-submit="onSearchSubmit" />
