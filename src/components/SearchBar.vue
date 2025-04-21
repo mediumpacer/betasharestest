@@ -168,8 +168,8 @@ onMounted(() => {
   width: 100%;
   height: var(--search-bar-height);
   background-color: var(--color-white);
-  border: 1px solid var(--color-standard-grey);
-  border-bottom: 2px solid var(--color-standard-grey);
+  border: 0.1rem solid var(--color-standard-grey);
+  border-bottom: 0.2rem solid var(--color-standard-grey);
   border-top-right-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
   position: relative;
@@ -216,7 +216,7 @@ onMounted(() => {
 .search-bar__suggestions {
   background: var(--color-white);
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--color-standard-grey);
+  border: 0.1rem solid var(--color-standard-grey);
   width: calc(100% + 0.2rem);
   position: absolute;
   left: -0.1rem;
@@ -230,15 +230,15 @@ onMounted(() => {
 
 .search-bar__suggestions-item {
   padding: 1rem;
-  border-left: 2px solid transparent;
+  border-left: 0.2rem solid transparent;
   cursor: pointer;
   transition:
     background-color 0.2s ease,
     border 0.2s ease;
 
   &:hover {
-    background-color: #f0f0f0;
-    border-left: 2px solid var(--color-beta-orange);
+    background-color: var(--color-light-grey);
+    border-left: 0.2rem solid var(--color-beta-orange);
   }
 }
 

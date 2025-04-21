@@ -28,16 +28,21 @@ defineProps({
   animation-iteration-count: infinite;
   animation-name: skeletonShimmer;
   animation-timing-function: linear;
-  background: linear-gradient(to right, #f0f0f0 8%, var(--color-white) 38%, #f0f0f0 54%);
-  background-size: 1000px 640px;
+  background: linear-gradient(
+    to right,
+    var(--color-light-grey) 8%,
+    var(--color-white) 38%,
+    var(--color-light-grey) 54%
+  );
+  background-size: 100rem 64rem;
 }
 
 @keyframes skeletonShimmer {
   0% {
-    background-position: -468px 0;
+    background-position: -46rem 0;
   }
   100% {
-    background-position: 468px 0;
+    background-position: 46rem 0;
   }
 }
 </style>

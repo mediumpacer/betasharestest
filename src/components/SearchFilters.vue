@@ -379,10 +379,10 @@ label {
 }
 
 .filter-details {
-  background-color: #fafafa;
+  background-color: var(--color-background-light);
   padding: 1rem;
   border-radius: 0.4rem;
-  max-height: 80rem;
+  max-height: 100rem;
 }
 
 .filter-details__row {
@@ -390,6 +390,15 @@ label {
 
   & > span {
     display: inline-block;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0.5rem;
+
+      label {
+        display: inline-block;
+        width: 4rem;
+      }
+    }
   }
 }
 
@@ -441,7 +450,7 @@ label {
 
 input,
 select {
-  border: 1px solid var(--color-standard-grey);
+  border: 0.1rem solid var(--color-standard-grey);
   background: white;
   padding: 0.6rem;
   border-radius: 0.2rem;
