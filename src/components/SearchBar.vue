@@ -94,8 +94,12 @@ const isSuggestionsOpen = ref(false);
 // Fires when user types in the search input and fetches suggestions and search data
 const onInput = (event: Event) => {
   const value = (event.target as HTMLInputElement).value;
-  updateSuggestions(value);
-  submitSearchForm();
+
+  // Only update suggestions and search if there is a value
+  if (value.length > 0) {
+    updateSuggestions(value);
+    submitSearchForm();
+  }
 };
 
 // Fetches matching words from the common terms
@@ -163,7 +167,7 @@ onMounted(() => {
   display: flex;
   width: 100%;
   height: var(--search-bar-height);
-  background-color: #fff;
+  background-color: var(--color-white);
   border: 1px solid var(--color-standard-grey);
   border-bottom: 2px solid var(--color-standard-grey);
   border-top-right-radius: 0.4rem;
@@ -196,7 +200,7 @@ onMounted(() => {
 .search-bar__submit {
   font-size: 1.8rem;
   background-color: var(--color-beta-orange);
-  color: #fff;
+  color: var(--color-white);
   border: none;
   border-radius: 0.4rem;
   height: var(--search-bar-height);
@@ -210,7 +214,7 @@ onMounted(() => {
 }
 
 .search-bar__suggestions {
-  background: #fff;
+  background: var(--color-white);
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   border: 1px solid var(--color-standard-grey);
   width: calc(100% + 0.2rem);

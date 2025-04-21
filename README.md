@@ -49,6 +49,6 @@ Autosuggestions are currently generated from this list, this could be improved b
 - 'Cybersecurity'
 - 'Cloud computing'
 
-Likewise filter options when expanded have been gleaned from the API results, if there are more values needed would look to revise the filter layout into something more vertical.
+Likewise filter options when expanded have been gleaned from the API results, if there are more values needed would look to revise the filter layout into something more vertical and dynamically generate the options.
 
 Pagination is just prev / next functionality, if large datasets were more common adding individual page buttons could be implemented.

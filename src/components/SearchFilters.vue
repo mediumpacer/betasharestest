@@ -50,7 +50,7 @@
             type="text"
             v-model="managementFeeMinValue"
             placeholder="Min"
-            maxlength="20"
+            maxlength="5"
           />
         </span>
         <span>
@@ -60,7 +60,7 @@
             type="text"
             v-model="managementFeeMaxValue"
             placeholder="Max"
-            maxlength="20"
+            maxlength="5"
           />
         </span>
       </div>
@@ -73,7 +73,7 @@
             type="text"
             v-model="oneYearReturnMinValue"
             placeholder="Min"
-            maxlength="20"
+            maxlength="5"
           />
         </span>
         <span>
@@ -83,7 +83,7 @@
             type="text"
             v-model="oneYearReturnMaxValue"
             placeholder="Max"
-            maxlength="20"
+            maxlength="5"
           />
         </span>
       </div>
@@ -96,7 +96,7 @@
             type="text"
             v-model="fiveYearReturnMinValue"
             placeholder="Min"
-            maxlength="20"
+            maxlength="5"
           />
         </span>
         <span>
@@ -106,7 +106,7 @@
             type="text"
             v-model="fiveYearReturnMaxValue"
             placeholder="Max"
-            maxlength="20"
+            maxlength="5"
           />
         </span>
       </div>
@@ -359,13 +359,13 @@ watch(orderByValue, (newValue) => {
 
   &:hover {
     background-color: var(--color-beta-orange);
-    color: #fff;
+    color: var(--color-white);
   }
 }
 
 .filters-toggle--active {
   background-color: green;
-  color: #fff;
+  color: var(--color-white);
 }
 
 label,
@@ -386,7 +386,7 @@ label {
 }
 
 .filter-details__row {
-  margin: 0.8rem 0;
+  margin-bottom: 1.6rem;
 
   & > span {
     display: inline-block;
@@ -414,6 +414,12 @@ label {
   font-size: 1.4rem;
   color: var(--colour-text);
   background-color: var(--color-standard-grey);
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--color-beta-orange-highlight);
+    color: var(--color-white);
+  }
 
   @media (max-width: 768px) {
     margin-bottom: 0.5rem;
@@ -426,7 +432,11 @@ label {
 
 .filter-checkbox:checked + .select-label {
   background-color: var(--color-beta-orange);
-  color: #fff;
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-beta-orange-highlight);
+  }
 }
 
 input,
@@ -449,6 +459,11 @@ select {
 .filter-details__button--clear {
   background-color: var(--color-standard-grey);
   color: var(--colour-text);
+
+  &:hover {
+    background-color: var(--color-beta-orange-highlight);
+    color: var(--color-white);
+  }
 }
 
 .v-enter-active,

@@ -10,7 +10,7 @@ defineProps({
     type: Number,
     default: 8,
   },
-})
+});
 </script>
 
 <style scoped>
@@ -28,7 +28,7 @@ defineProps({
   animation-iteration-count: infinite;
   animation-name: skeletonShimmer;
   animation-timing-function: linear;
-  background: linear-gradient(to right, #f0f0f0 8%, #fff 38%, #f0f0f0 54%);
+  background: linear-gradient(to right, #f0f0f0 8%, var(--color-white) 38%, #f0f0f0 54%);
   background-size: 1000px 640px;
 }
 

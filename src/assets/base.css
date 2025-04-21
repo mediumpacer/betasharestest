@@ -1,5 +1,6 @@
 /* Betashares colours & variables */
 :root {
+  --color-white: #fff;
   --color-text: #09090a;
   --color-text-light: #666;
   --color-background: #f0edeb;

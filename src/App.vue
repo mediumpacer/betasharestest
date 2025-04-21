@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 import type { SearchResultsResponse, SearchResult, FilterOptions } from '@/types/search';
 import SearchPagination from './components/SearchPagination.vue';
 
@@ -118,8 +118,6 @@ const onApplyFilters = (options: FilterOptions) => {
   currentPage.value = 1;
   fetchSearchResults();
 };
-
-onMounted(() => {});
 
 // If search text changes we need to reset the current page
 watch(searchText, (newValue) => {

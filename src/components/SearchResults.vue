@@ -100,7 +100,7 @@ defineProps({
 
 .search-results__item {
   padding: 1rem;
-  background: #fff;
+  background: var(--color-white);
   border: 0.1rem solid var(--color-standard-grey);
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   border-radius: 0.4rem;
@@ -128,7 +128,7 @@ defineProps({
   line-height: 1;
   padding: 0.4rem 0.8rem;
   background: var(--color-beta-orange);
-  color: #fff;
+  color: var(--color-white);
   margin-right: 0.4rem;
   font-weight: bold;
 }
